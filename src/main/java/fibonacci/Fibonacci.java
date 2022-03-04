@@ -11,6 +11,6 @@ public class Fibonacci {
             throw new RuntimeException("Negative value : " + value);
 
 
-        return result;
+        return 0;
     }
 }
