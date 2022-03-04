@@ -7,6 +7,10 @@ public class Fibonacci {
      * @author Adrian Guerrero Alvarez
      */
     public  int compute(int value){
-        return 0;
+        if(value < 0)
+            throw new RuntimeException("Negative value : " + value);
+
+
+        return result;
     }
 }
