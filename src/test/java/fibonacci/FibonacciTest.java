@@ -97,6 +97,13 @@ class FibonacciTest {
     }
 
     @Test
+    public void testComputeReturnThirtyfourIfTheNumberIsNine(){
+        int expectedValue = 34;
+        int obtainedValue = fibonacci.compute(9);
+        assertEquals(expectedValue, obtainedValue);
+    }
+
+    @Test
     public void testComputeReturnExceptionIfTheNumberIsNegative(){
         assertThrows(RuntimeException.class, () -> fibonacci.compute(-1));
         //Con esto comprueba si sale una excepcion o no
